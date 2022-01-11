@@ -1,0 +1,46 @@
+
+.row {
+  display: flex;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.col {
+  margin-top: 1.9rem;
+}
+
+.row + .row {
+  margin-top: 1.9rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+.price-list-row {
+  @extend .row;
+  width: 100%;
+  
+
+  .price-list-col {
+    // @extend .col;
+    text-align: left;
+    border: 2px solid $secondary-color;
+    border-radius: 21px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .price-list-col + .price-list-col {
+    margin-top: 1.9rem;
+  }
+}
+

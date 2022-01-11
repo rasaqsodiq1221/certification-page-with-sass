@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+p {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 4.125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav img {
+  max-width: 100%;
+}
+
+.nav .nav__link {
+  width: 40%;
+}
+
+.hamburger {
+  margin-left: auto;
+}
+
+.row, .price-list-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.col {
+  margin-top: 1.9rem;
+}
+
+.row + .row, .price-list-row + .row, .row + .price-list-row, .price-list-row + .price-list-row {
+  margin-top: 1.9rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+.price-list-row {
+  width: 100%;
+}
+
+.price-list-row .price-list-col {
+  text-align: left;
+  border: 2px solid #7853F1;
+  border-radius: 21px;
+  line-height: 1;
+  margin: 0;
+}
+
+.price-list-row .price-list-col + .price-list-col {
+  margin-top: 1.9rem;
+}
+/*# sourceMappingURL=index.css.map */
