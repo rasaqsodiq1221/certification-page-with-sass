@@ -1,0 +1,35 @@
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  
+}
+
+
+.nav__link {
+  color: $articles;
+  font-weight: $big-fw;
+  line-height: 4;
+  font-size: 0.9rem;
+}
+
+.nav__link--button {
+  color: #FFF;
+  background-color: $secondary-color;
+  padding: 1em;
+}
+
+header {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo {
+      width: 40%;
+    }
+
+    
+  }
+
+}

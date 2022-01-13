@@ -13,34 +13,15 @@ p {
   font-weight: 300;
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.container {
   width: 80%;
-  margin: 0 auto;
-  min-height: 4.125rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 600px;
+  padding: 2em 0;
+  /* added for nav-toggle positioning */
+  position: relative;
 }
 
-.nav img {
-  max-width: 100%;
-}
-
-.nav .nav__link {
-  width: 40%;
-}
-
-.hamburger {
-  margin-left: auto;
-}
-
-.row, .price-list-row {
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,35 +35,200 @@ p {
   text-align: center;
 }
 
-.col {
-  margin-top: 1.9rem;
+img {
+  max-width: 100%;
 }
 
-.row + .row, .price-list-row + .row, .row + .price-list-row, .price-list-row + .price-list-row {
-  margin-top: 1.9rem;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 p {
-  margin-top: 1rem;
+  padding: 2em 0;
 }
 
-button {
-  margin-top: 1rem;
-}
-
-.price-list-row {
+.btn, .btn-contact {
+  padding: 1.0625em 3.75em;
+  border-radius: 7px;
   width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
-.price-list-row .price-list-col {
-  text-align: left;
+.btn-contact {
+  border: 3px solid #FBFAFF;
+}
+
+.btn-price, .btn-contact-light {
+  width: 100%;
   border: 2px solid #7853F1;
-  border-radius: 21px;
-  line-height: 1;
-  margin: 0;
+  border-radius: 7px;
+  padding: 1em;
+  max-width: 350px;
 }
 
-.price-list-row .price-list-col + .price-list-col {
-  margin-top: 1.9rem;
+.footer-logo {
+  background-color: red;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav__link {
+  color: #2D1D60;
+  font-weight: 600;
+  line-height: 4;
+  font-size: 0.9rem;
+}
+
+.nav__link--button {
+  color: #FFF;
+  background-color: #7853F1;
+  padding: 1em;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .logo {
+  width: 40%;
+}
+
+.social-media {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media .item4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+
+.social-media .item7 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+.social-media .item6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/4/3;
+}
+
+.social-media .social-media--col {
+  padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.excel, .demo-certificate {
+  padding-bottom: 2em;
+}
+
+.price-list + .price-list {
+  margin-top: 2rem;
+}
+
+.price-tag {
+  border: 2px solid #7853F1;
+  max-width: 350px;
+  border-radius: 21px;
+  padding: 1.18em 1.18em 2.8em;
+  margin: 0 auto 2rem;
+}
+
+.price-tag .package {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid #02020280;
+}
+
+.price-tag .amount p {
+  padding: 1em 0;
+}
+
+.package-list {
+  text-align: left;
+}
+
+.package-list .list {
+  padding: 0;
+}
+
+.package-list img {
+  margin-right: 1rem;
+}
+
+.faqs {
+  margin-bottom: 2rem;
+}
+
+.questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.25em;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.questions .questions-paragraph {
+  width: 80%;
+  text-align: left;
+}
+
+.questions .arrow {
+  width: 5%;
+}
+
+.questions + .questions {
+  margin-top: 1rem;
+}
+
+.contact-text {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,3 +1,11 @@
+.container {
+  width: 80%;
+  max-width: 600px;
+  padding: 2em 0;
+  /* added for nav-toggle positioning */
+  position: relative;
+}
+
 .row {
   display: flex;
   width: 80%;
@@ -8,10 +16,51 @@
   
 }
 
-.row + .row {
-  margin-top: 1.9rem;
-}
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  padding: 2em 0;
+}
+
+//button
+
+.btn {
+  padding: 1.0625em 3.75em;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto
+}
+
+.btn-contact {
+  @extend .btn;
+  border: 3px solid #FBFAFF;
+}
+
+.btn-price {
+  width: 100%;
+  border: 2px solid $secondary-color;
+  border-radius: 7px;
+  padding: 1em;
+  max-width: 350px;
+}
+
+.btn-contact-light {
+  @extend .btn-price;
+}
+
+// footer logo viewer
+.footer-logo {
+  background-color: red;
 }
