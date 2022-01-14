@@ -59,20 +59,12 @@ p {
   margin: 0 auto;
 }
 
-.btn-contact {
-  border: 3px solid #FBFAFF;
-}
-
 .btn-price, .btn-contact-light {
   width: 100%;
   border: 2px solid #7853F1;
   border-radius: 7px;
   padding: 1em;
   max-width: 350px;
-}
-
-.footer-logo {
-  background-color: red;
 }
 
 .nav {
@@ -105,6 +97,7 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1em 0;
 }
 
 header .container .logo {
@@ -230,5 +223,115 @@ header .container .logo {
 
 .contact-text {
   margin: 2rem 0;
+}
+
+.footer-col {
+  margin-bottom: 2rem;
+}
+
+.footer-col .footer-list {
+  padding: 1.6em 0 0;
+}
+
+.footer-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.footer-icon + .footer-icon {
+  margin-left: 1rem;
+}
+
+.footer-row {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #2D1D60;
+}
+
+p {
+  color: #2D1D6080;
+}
+
+.main-background {
+  background-color: #E5DEFF9E;
+}
+
+.main-background p {
+  color: #2D1D60;
+}
+
+.second-section-background {
+  background-color: #F4F2FF99;
+}
+
+.third-section-background {
+  background-color: #C4C4C433;
+}
+
+.fourth-section-background {
+  background-color: #7853F1CC;
+}
+
+.fourth-section-background h2, .fourth-section-background p {
+  color: #EFEBFF;
+}
+
+.fifth-section-background {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(45, 29, 96, 0.3);
+}
+
+.sixth-section-background {
+  background-color: #FFFFFF;
+}
+
+.footer-background {
+  background-color: #9375F4;
+}
+
+.footer-background p {
+  color: #FFFFFF;
+}
+
+.questions-paragraph {
+  color: #2D1D60;
+}
+
+.btn, .btn-contact {
+  background-color: #7853F1;
+  border: none;
+  color: #FFFFFF;
+}
+
+.btn-contact {
+  border: 3px solid #FBFAFF;
+  background-color: #7853F1CC;
+}
+
+.btn-price, .btn-contact-light {
+  background-color: #9375F4;
+  color: #FFFFFF;
+  border: none;
+}
+
+#ext-btn-price {
+  background-color: #FFFFFF;
+  border: 2px solid #7853F1;
+  color: #0EE99C;
+}
+
+.btn-contact-light {
+  background-color: #FFFFFF;
+  color: #7853F1;
+  border: 2px solid #7853F1;
 }
 /*# sourceMappingURL=index.css.map */

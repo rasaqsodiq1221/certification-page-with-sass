@@ -9,17 +9,17 @@
 //   'components';
 
 @import
+  'layouts/footer',
   'layouts/global',
   'layouts/header',
   'layouts/main',
-  'layouts/footer',
   'layouts/sections';
 
 // @import
 //   'pages';
 
 @import 
-  'themes/color.scss';
+  'themes/color';
 
 // @import 
 //   'vendors';

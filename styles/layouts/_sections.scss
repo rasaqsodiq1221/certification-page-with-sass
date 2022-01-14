@@ -62,6 +62,7 @@
   }
 }
 
+
 // FAQS--section
 
 .faqs {
@@ -87,11 +88,37 @@
   margin-top: 1rem;
 }
 
+
 // contact__FAQS--section
 
 .contact-text {
   margin: 2rem 0;
 }
+
+// footer--section
+.footer-col {
+  margin-bottom: 2rem;
+  .footer-list{
+    padding: 1.6em 0 0;
+  }
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.footer-icon + .footer-icon {
+  margin-left: 1rem;
+}
+
+.footer-row {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+}
+
 
 
 

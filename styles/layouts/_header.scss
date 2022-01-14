@@ -24,7 +24,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    padding: 1em 0;
     .logo {
       width: 40%;
     }
@@ -33,3 +33,4 @@ header {
   }
 
 }
+

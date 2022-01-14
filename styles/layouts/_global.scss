@@ -45,7 +45,7 @@ p {
 
 .btn-contact {
   @extend .btn;
-  border: 3px solid #FBFAFF;
+  
 }
 
 .btn-price {
@@ -60,7 +60,4 @@ p {
   @extend .btn-price;
 }
 
-// footer logo viewer
-.footer-logo {
-  background-color: red;
-}
+
