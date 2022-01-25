@@ -5,21 +5,20 @@
   'base/base',
   'base/typography';
 
-// @import
-//   'components';
-
-@import
+  
+  @import
   'layouts/footer',
   'layouts/global',
   'layouts/header',
   'layouts/main',
   'layouts/sections';
+  
+  // @import
+  //   'pages';
 
-// @import
-//   'pages';
-
-@import 
+  @import 
   'themes/color';
-
-// @import 
-//   'vendors';
+  
+  // @import 
+  //   'vendors';
+  @import 'components/media';

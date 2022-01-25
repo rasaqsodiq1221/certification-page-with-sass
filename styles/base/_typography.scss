@@ -2,3 +2,13 @@ p {
   font-size: $p-fs;
   font-weight: $normal;
 }
+
+h1 {
+  font-weight: $big-fw;
+  font-size: $h1-fs;
+}
+
+h2 {
+  font-weight: $medium-fw;
+  font-size: $h2-fs;
+}
