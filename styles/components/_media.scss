@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 
   * {
     margin: 0;
@@ -14,7 +14,7 @@
   }
 
   h2 {
-    font-weight: $medium-fw;
+    font-weight: $big-fw;
     font-size: 1.5rem;
     text-align: left;
   }
@@ -38,6 +38,25 @@
       font-size: 1.875rem;
     }
   }
+  
+  // .nav {
+  //   visibility: visible;
+    
+  // }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  @media (min-width:900px) {
+    .nav__list {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+    }
+  }
+
+  
 
   .second-section-background, .third-section-background, .fourth-section-background{
     .row {
@@ -126,6 +145,18 @@
     .col:not(:first-child) {
       flex: 1;
     }
+
+    .price {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .price-list + .price-list{
+        margin-left: 2rem;
+      }
+    }
     .price-text, .price-note {
       text-align: center;
       font-weight: $big-fw;
@@ -142,13 +173,46 @@
 
   }
 
+  #faq {
+    text-align: center;
+  }
+
 
   .faqs-col {
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: space-between;
     
+    #question {
+      margin-top: 0;
+    }
   }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .footer-row {
+    width: 90%;
+    margin: 0 auto 4rem;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .end-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
   
   
 }
