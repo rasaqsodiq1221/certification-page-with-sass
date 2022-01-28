@@ -4,7 +4,6 @@
   padding: 4em 0;
   /* added for nav-toggle positioning */
   position: relative;
-
 }
 
 .row {
@@ -16,15 +15,20 @@
   text-align: center;
 }
 
-
 img {
   max-width: 100%;
 }
 
 a {
   text-decoration: none;
-  
 }
+
+a:hover {
+  padding: 0.5em;
+  background-color: #C4C4C433;
+  border-radius: 7px;
+}
+
 
 
 li {
@@ -42,12 +46,11 @@ p {
   border-radius: 7px;
   width: 100%;
   max-width: 350px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .btn-contact {
   @extend .btn;
-  
 }
 
 .btn-price {
@@ -62,7 +65,7 @@ p {
   @extend .btn-price;
 }
 
-.btn:hover  {
+.btn:hover {
   letter-spacing: 2px;
   cursor: pointer;
   transition: ease;
@@ -72,5 +75,3 @@ p {
   letter-spacing: 2px;
   cursor: pointer;
 }
-
-

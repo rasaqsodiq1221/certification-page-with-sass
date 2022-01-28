@@ -65,6 +65,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  padding: 0.5em;
+  background-color: #C4C4C433;
+  border-radius: 7px;
+}
+
 li {
   list-style-type: none;
 }
