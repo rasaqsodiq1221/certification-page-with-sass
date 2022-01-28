@@ -12,3 +12,13 @@ h2 {
   font-weight: $medium-fw;
   font-size: $h2-fs;
 }
+
+.none{
+  display: none;
+  &_m{
+    @extend .none;
+    @media (min-width:$laptop) {
+      display:flex;
+    }
+  }
+}

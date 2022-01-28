@@ -1,48 +1,9 @@
-// .nav {
-//   visibility: hidden;
-//   height: 0;
-//   position: absolute;
-  
-// }
-
-@media (max-width: 900px) {
-  .nav__list {
-    position: fixed;
-    inset: 0 0 0 0;
-    padding: 20vh 2rem;
-    background-color: hsla(0, 0%, 100%, 1);
-    z-index: 1000;
-
-    @supports (backdrop-filter: blur(2em)) {
-      background-color: hsla(0, 0%, 100%, .2);
-      backdrop-filter: blur(2em);
-    }
-    
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-}
-
-
-.nav__link {
-  color: $articles;
-  font-weight: $big-fw;
-  line-height: 4;
-  font-size: 0.9rem;
-}
-
-.nav__link--button {
-  color: #FFF;
-  background-color: $secondary-color;
-  padding: 1em 1.25em;
-  border-radius: 7px;
-}
-
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  background-color: #fff;
   .container {
     display: flex;
     flex-direction: row;
@@ -53,8 +14,45 @@ header {
       align-self: center;
     }
 
-    
+    .nav__list {
+      position: fixed;
+      inset: 0 0 0 0;
+      padding: 20vh 2rem;
+      background-color: hsla(0, 0%, 100%, 1);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: $laptop) {
+        flex-direction: row;
+        position: static;
+        background-color: #00000000 !important;
+        backdrop-filter: none !important;
+        padding: 2vh 2rem;
+        gap: 1em;
+      }
+      @supports (backdrop-filter: blur(2em)) {
+        background-color: hsla(0, 0%, 100%, 0.2);
+        backdrop-filter: blur(2em);
+      }
+      .nav__link {
+        color: $articles;
+        font-weight: $big-fw;
+        line-height: 4;
+        font-size: 0.9rem;
+      }
+
+      .nav__link--button {
+        color: #fff;
+        background-color: $secondary-color;
+        padding: 1em 1.25em;
+        border-radius: 7px;
+      }
+    }
+    .toggle {
+      z-index: 1000;
+      @media (min-width: $laptop) {
+        display: none;
+      }
+    }
   }
-
 }
-

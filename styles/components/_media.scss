@@ -29,7 +29,7 @@
     max-width: 1200px;
   }
 
-  .main-background {
+  .mainBackground {
     .col {
       padding-inline: 4rem;
       text-align: center;
@@ -39,25 +39,6 @@
     }
   }
   
-  // .nav {
-  //   visibility: visible;
-    
-  // }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  @media (min-width:900px) {
-    .nav__list {
-      display: flex;
-      flex-direction: row;
-      gap: 1em;
-    }
-  }
-
-  
-
   .second-section-background, .third-section-background, .fourth-section-background{
     .row {
       display: flex;
