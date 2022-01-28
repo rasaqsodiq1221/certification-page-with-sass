@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 980px) {
 
   * {
     margin: 0;
@@ -27,6 +27,12 @@
   .row {
     width: 90%;
     max-width: 1200px;
+  }
+
+  header {
+    .container {
+      padding: 0;
+    }
   }
 
   .mainBackground {

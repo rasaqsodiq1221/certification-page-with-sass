@@ -15,7 +15,7 @@ p {
 
 h1 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 980px) {
   .none_m {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -89,6 +89,18 @@ p {
   max-width: 350px;
 }
 
+.btn:hover, .btn-contact:hover {
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: ease;
+  transition: ease;
+}
+
+.btn-price:hover, .btn-contact-light:hover {
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -133,7 +145,7 @@ header .container .nav__list {
           flex-direction: column;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 980px) {
   header .container .nav__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -174,7 +186,7 @@ header .container .toggle {
   z-index: 1000;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 980px) {
   header .container .toggle {
     display: none;
   }
@@ -229,6 +241,10 @@ header .container .toggle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.excel {
+  padding-top: 2em;
 }
 
 .excel, .demo-certificate {
@@ -398,7 +414,7 @@ p {
 
 .btn-contact {
   border: 3px solid #FBFAFF;
-  background-color: #7853F1CC;
+  background-color: #7853F1;
 }
 
 .btn-price, .btn-contact-light {
@@ -419,7 +435,7 @@ p {
   border: 2px solid #7853F1;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 980px) {
   * {
     margin: 0;
     padding: 0;
@@ -443,6 +459,9 @@ p {
   .row {
     width: 90%;
     max-width: 1200px;
+  }
+  header .container {
+    padding: 0;
   }
   .mainBackground .col {
     padding-inline: 4rem;
